@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+  font-family: 'IBM Plex Sans', 'Inter', 'Helvetica', sans-serif;
+  font-weight: 18;
+  line-height: 1.5;
+
+  --dark-grey: hsl(0, 0%, 14%);
+  --light-grey: hsl(0, 0%, 59%);
+  --light: hsl(0, 0%, 98%);
+  --dark-blue: hsl(228, 45%, 44%);
+  --light-blue: hsl(228, 91%, 70%);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: var(--light);
+    color: var(--dark-grey);
+  }
+
+  .attribution a {
+    color: var(--dark-blue);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: var(--dark-grey);
+    color: var(--light)
+  }
+
+  .attribution a {
+    color: var(--light-blue)
+  }
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+}
