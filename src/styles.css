@@ -1,0 +1,151 @@
+.attribution {
+  margin: 2rem 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.google-map {
+  height: 700px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 2rem;
+}
+
+header {
+  padding: 2rem 2rem 0 2rem;
+
+  background-image: url('./assets/pattern-bg-desktop.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 1.75rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--light)
+}
+
+form {
+  align-self: center;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form > * {
+  flex-grow: 1;
+}
+
+#ip {
+  border: 0;
+  padding: 1rem;
+  color-scheme: light;
+}
+
+#submit {
+  border: 0;
+  border-radius: 0;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: black;
+  line-height: 0;
+}
+
+#submit:hover,
+#submit:active {
+  background-color: hsl(0, 0%, 20%)
+}
+
+.ip-info {
+  background-color: white;
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 16px 16px hsla(0, 0%, 0%, 10%);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+
+  position: relative;
+  top: 40px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.col-name {
+  color: var(--light-grey);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.col-value {
+  color: var(--dark-grey);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  /* 
+  form {
+    align-self: auto;
+  } */
+
+  #ip {
+    padding: 0.75rem;
+  }
+
+  #submit {
+    padding: 0.75rem;
+  }
+
+  .ip-info {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .col {
+    align-items: center;
+    gap: 0;
+  }
+
+  .col-value {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .google-map {
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #ip {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .ip-info {
+    max-width: 900px;
+    align-self: center;
+  }
+}
