@@ -16,7 +16,7 @@ export default function App() {
   });
 
   return (
-    <>
+    <main>
       <header>
         <h1>IP Address Tracker</h1>
         <Form
@@ -57,6 +57,6 @@ export default function App() {
         </a>
         . Coded by <a href="https://github.com/vietan0">Việt An</a>.
       </div>
-    </>
+    </main>
   );
 }

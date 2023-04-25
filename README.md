@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Solution Page on Frontend Mentor](https://www.frontendmentor.io/solutions/ip-address-tracker-using-react-and-google-maps-Z9QqnaiRRB)
+- [Live Website](https://fm-ip-address-tracker-vietan0.netlify.app/)
 
 ## My process
 

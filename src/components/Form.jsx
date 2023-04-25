@@ -69,6 +69,7 @@ export default function Form({ setLocation, setIpInfo }) {
       />
       <button
         id="submit"
+        aria-label="Search IP/Domain"
         onClick={sendIP}
       >
         <MdChevronRight
