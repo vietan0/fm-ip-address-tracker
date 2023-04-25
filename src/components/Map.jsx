@@ -7,7 +7,7 @@ export default function Map({ location, zoomLevel }) {
   return (
     <div className="google-map">
       <GoogleMapReact
-        bootstrapURLKeys={{ key: 'AIzaSyC3RW1jMZTgSAWAi6dZsgbgywnLc3G4CiA' }}
+        bootstrapURLKeys={{ key: import.meta.env.VITE_GOOGLE_MAPS_API_KEY }}
         defaultCenter={{ lat: 20.99835602, lng: 97.01502627 }}
         center={{ lat: location.lat, lng: location.lng }}
         defaultZoom={zoomLevel}

@@ -14,7 +14,7 @@
 header {
   padding: 2rem 2rem 0 2rem;
 
-  background-image: url('./assets/pattern-bg-desktop.png');
+  background-image: url('../assets/pattern-bg-desktop.png');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -104,10 +104,9 @@ form > * {
     font-size: 1.5rem;
   }
 
-  /* 
-  form {
-    align-self: auto;
-  } */
+  header {
+    background-image: url('../assets/pattern-bg-mobile.png');
+  }
 
   #ip {
     padding: 0.75rem;

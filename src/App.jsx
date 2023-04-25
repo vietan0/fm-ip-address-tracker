@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Map from './Map';
-import Form from './Form';
+import Map from './components/Map';
+import Form from './components/Form';
 
 export default function App() {
   const [location, setLocation] = useState({
